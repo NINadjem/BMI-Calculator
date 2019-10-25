@@ -10,9 +10,10 @@ This project consist on creating an Android App that calculates BMI ( Body Mass 
 | ------------- |:-------------:|
 | ![alt text](https://github.com/NINadjem/BMI-Calculator/blob/master/Screenshots/mainPage.png "first screen" )| ![alt text](https://github.com/NINadjem/BMI-Calculator/blob/master/Screenshots/normalW.png "Normal BMI" ) |
 
+
 | Reporting BMI State (case OverWeight) | Reporting BMI State (case UnderWeight) |
 | ------------- |:-------------:|
-| ![alt text](https://github.com/https://github.com/NINadjem/BMI-Calculator/blob/master/Screenshots/overW.png "high BMI" ) | ![alt text](https://github.com/NINadjem/BMI-Calculator/blob/master/Screenshots/underW.png "low BMI" ) |
+| ![alt text](https://github.com/NINadjem/BMI-Calculator/blob/master/Screenshots/overW.png "high BMI" ) | ![alt text](https://github.com/NINadjem/BMI-Calculator/blob/master/Screenshots/underW.png "low BMI" ) |
 
 ## IDE & Programming language 🔧
 This Application was devlopped with 💜 Kotlin 💜 using the one and the only in the world 😍 Android Studio 😍 
