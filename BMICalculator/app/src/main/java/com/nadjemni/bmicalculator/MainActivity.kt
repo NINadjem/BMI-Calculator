@@ -1,13 +1,12 @@
 package com.nadjemni.bmicalculator
 
-import android.annotation.SuppressLint
 import android.content.Intent
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
+import java.math.BigDecimal
+import java.math.RoundingMode
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,8 +17,8 @@ class MainActivity : AppCompatActivity() {
         calculateBtn.setOnClickListener {
             if (heightEDTX.text.isNotEmpty() && weightEDTX.text.isNotEmpty()) {
                 val weight = weightEDTX.text.toString().toDouble()
-                val height = heightEDTX.text.toString().toLong()
-                if (weight > 0 && weight < 600 && height >= 50 && height < 250) {
+                val height = heightEDTX.text.toString().toDouble()/100
+                if (weight > 0 && weight < 600 && height >= 0.50 && height < 2.50) {
                     val intent = Intent(this@MainActivity, ResultActivity::class.java)
                     intent.putExtra("bmi", calculateBMI(weight, height))
                     startActivity(intent)
@@ -32,13 +31,13 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    @SuppressLint("ResourceAsColor")
     private fun showErrorSnack(errorMsg: String) {
         val snackbar = Snackbar.make(container, "error : $errorMsg !", Snackbar.LENGTH_LONG)
-        snackbar.view.setBackgroundColor(R.color.colorRed)
+        snackbar.view.setBackgroundResource(R.color.colorRed)
         snackbar.show()
     }
 
-    private fun calculateBMI(weight: Double, height: Long) = (weight / ((height /100.0) * (height /100.0)))
+    private fun calculateBMI(weight: Double, height: Double) = BigDecimal(weight / (height * height))
+        .setScale(2, RoundingMode.HALF_EVEN).toDouble()
 
 }

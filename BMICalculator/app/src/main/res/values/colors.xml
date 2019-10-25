@@ -3,11 +3,11 @@
     <color name="colorGray">#A0A0A0</color>
     <color name="colorWhite"> #ffffff</color>
     <color name="colorBlack"> #3d3d3d</color>
-    <color name="colorYellow">#FFE46D</color>
+    <color name="colorYellow">#F4D648</color>
     <color name="colorGreen">#2abb9a</color>
     <color name="colorRed">#F44B3E</color>
     <color name="colorPrimary">@color/colorGreen</color>
-    <color name="colorPrimaryDark">@color/colorGreen</color>
-    <color name="colorAccent">@color/colorYellow</color>
+    <color name="colorPrimaryDark">#3d3d3d</color>
+    <color name="colorAccent">@color/colorGreen</color>
     <color name="colorAccent2">@color/colorRed</color>
 </resources>

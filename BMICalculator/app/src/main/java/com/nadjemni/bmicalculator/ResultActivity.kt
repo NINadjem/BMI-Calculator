@@ -8,7 +8,7 @@ import android.view.View
 import kotlinx.android.synthetic.main.activity_result.*
 
 class ResultActivity : AppCompatActivity() {
-    @SuppressLint("ResourceAsColor", "SetTextI18n")
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
@@ -21,11 +21,11 @@ class ResultActivity : AppCompatActivity() {
         } else {
             bmiValueTV.text=bmi.toString()
                 if (bmi < 18.5) {
-                    containerL.setBackgroundColor(R.color.colorYellow)
+                    containerL.setBackgroundResource(R.color.colorYellow)
                     bmiFlagImgView.setImageResource(R.drawable.exclamationmark)
                     bmiLabelTV.text="You have an UnderWeight!"
                     commentTV.text="Here are some advices To help you increase your weight"
-                    advice2IMG.setImageResource(R.drawable.nowater)
+                    advice1IMG.setImageResource(R.drawable.nowater)
                     advice1TV.text="Don't drink water before meals"
                     advice2IMG.setImageResource(R.drawable.bigmeal)
                     advice2TV.text="Use bigger plates"
@@ -33,11 +33,11 @@ class ResultActivity : AppCompatActivity() {
 
                 } else {
                     if (bmi > 25) {
-                        containerL.setBackgroundColor(R.color.colorRed)
-                        bmiFlagImgView.setImageResource(R.drawable.exclamationmark)
+                        containerL.setBackgroundResource(R.color.colorRed)
+                        bmiFlagImgView.setImageResource(R.drawable.warning)
                         bmiLabelTV.text="You have an OverWeight!"
                         commentTV.text="Here are some advices To help you decrease your weight"
-                        advice2IMG.setImageResource(R.drawable.water)
+                        advice1IMG.setImageResource(R.drawable.water)
                         advice1TV.text="Drink water a half hour before meals"
                         advice2IMG.setImageResource(R.drawable.twoeggs)
                         advice2TV.text="Eeat only two meals per day and make sure that they contains a high protein"

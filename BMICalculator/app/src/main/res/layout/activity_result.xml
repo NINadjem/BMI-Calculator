@@ -8,12 +8,7 @@
     android:background="@color/colorGreen"
     android:gravity="top|start"
     android:orientation="vertical"
-    android:paddingLeft="30dp"
-    android:paddingBottom="30dp"
-    android:paddingTop="2dp"
-    android:visibility="visible"
     tools:context=".ResultActivity">
-
     <ImageView
         android:layout_width="55dp"
         android:layout_height="55dp"
@@ -23,160 +18,175 @@
         android:paddingRight="2dp"
         android:paddingTop="2dp"
         android:paddingLeft="20dp"
-        android:paddingBottom="20dp"
+        android:paddingBottom="10dp"
+        android:visibility="invisible"
         />
-
     <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:paddingTop="30dp"
+        android:layout_height="match_parent"
+        android:gravity="top|start"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
         android:paddingBottom="30dp"
-        android:layout_marginRight="30dp"
+        android:paddingTop="2dp"
         >
-
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:text="Your BMI = "
-            android:textColor="@color/colorBlack"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/bmiValueTV"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="25.5"
-            android:textColor="@color/colorWhite"
-            android:textSize="35sp"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:gravity="center"
-        android:layout_marginRight="30dp"
-        android:orientation="vertical">
-
-        <ImageView
-            android:id="@+id/bmiFlagImgView"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginBottom="10dp"
-            android:src="@drawable/correct" />
-
-        <TextView
-            android:id="@+id/bmiLabelTV"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="You have a Normal Weight!"
-            android:textColor="@color/colorWhite"
-            android:textSize="22sp"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginRight="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/commentTV"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
             android:gravity="center"
-            android:text="Here are some advices To help you keep your weight"
-            android:textColor="@color/colorBlack"
-            android:textSize="15sp"
-            android:textStyle="italic|bold" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:gravity="center|left"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginRight="15dp"
-                android:src="@drawable/active"
-                android:id="@+id/advice1IMG"
-                />
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            >
 
             <TextView
-                android:id="@+id/advice1TV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="2dp"
-                android:text="Stay active."
+                android:layout_marginRight="10dp"
+                android:text="Your BMI = "
                 android:textColor="@color/colorBlack"
-                android:textSize="13sp" />
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/bmiValueTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25.5"
+                android:textColor="@color/colorWhite"
+                android:textSize="35sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:gravity="left|center"
-            android:orientation="horizontal">
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginRight="15dp"
-                android:src="@drawable/salad"
-                android:id="@+id/advice2IMG"/>
+                android:id="@+id/bmiFlagImgView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/correct" />
 
             <TextView
-                android:id="@+id/advice2TV"
+                android:id="@+id/bmiLabelTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="2dp"
-                android:text="Choose the right foods and Cook by yourself."
-                android:textColor="@color/colorBlack"
-                android:textSize="13sp" />
-
+                android:text="You have a Normal Weight!"
+                android:textColor="@color/colorWhite"
+                android:textSize="22sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:gravity="left|center"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginRight="15dp"
-                android:src="@drawable/sleep"
-                android:id="@+id/advice3IMG"/>
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/advice3TV"
+                android:id="@+id/commentTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="2dp"
-                android:text="Focus on relaxation and sleep."
+                android:layout_marginBottom="10dp"
+                android:text="Here are some advices To help you keep your weight"
                 android:textColor="@color/colorBlack"
-                android:textSize="13sp" />
+                android:textSize="15sp"
+                android:textStyle="italic|bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/active"
+                    android:id="@+id/advice1IMG"
+                    />
+
+                <TextView
+                    android:id="@+id/advice1TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Stay active."
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/salad"
+                    android:id="@+id/advice2IMG"/>
+
+                <TextView
+                    android:id="@+id/advice2TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Choose the right foods and Cook by yourself."
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/sleep"
+                    android:id="@+id/advice3IMG"/>
+
+                <TextView
+                    android:id="@+id/advice3TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Focus on relaxation and sleep."
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
     </LinearLayout>
+
+
+
+
 
 </LinearLayout>
