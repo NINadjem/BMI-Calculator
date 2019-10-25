@@ -7,14 +7,14 @@ This project consist on creating an Android App that calculates BMI ( Body Mass 
 ## Screenshots 📷
 | Main UI |
 | ------------- |
-|![alt text](https://github.com/NINadjem/BMI-Calculator/blob/master/BMI-Calculator/Screenshots/main%20page.PNG "first screen" )|
+|![alt text](https://github.com/NINadjem/BMI-Calculator/blob/master/Screenshots/mainPage.png "first screen" )|
 | Filling Fields | Reporting BMI State (case Normal) |
 | ------------- |:-------------:|
-| ![alt text](https://github.com/madenemalika/Affine-Encryption/blob/master/AffineEncryption/src/Screenshots/user%201.PNG "when the user fill the fields" ) | ![alt text](https://github.com/madenemalika/Affine-Encryption/blob/master/AffineEncryption/src/Screenshots/user%202.PNG "Normal BMI" ) |
+| ![alt text](https://github.com/NINadjem/BMI-Calculator/blob/master/Screenshots/fill_info.png "when the user fill the fields" ) | ![alt text](https://github.com/NINadjem/BMI-Calculator/blob/master/Screenshots/normalW.png "Normal BMI" ) |
 
 | Reporting BMI State (case OverWeight) | Reporting BMI State (case UnderWeight) |
 | ------------- |:-------------:|
-| ![alt text](https://github.com/madenemalika/Affine-Encryption/blob/master/AffineEncryption/src/Screenshots/user%202%20get%20the%20msg.PNG "high BMI" ) | ![alt text](https://github.com/madenemalika/Affine-Encryption/blob/master/AffineEncryption/src/Screenshots/user%201%20with%20msg.PNG "low BMI" ) |
+| ![alt text](https://github.com/https://github.com/NINadjem/BMI-Calculator/blob/master/Screenshots/overW.png "high BMI" ) | ![alt text](https://github.com/NINadjem/BMI-Calculator/blob/master/Screenshots/underW.png "low BMI" ) |
 
 ## IDE & Programming language 🔧
 This Application was devlopped with 💜 Kotlin 💜 using the one and the only in the world 😍 Android Studio 😍 
