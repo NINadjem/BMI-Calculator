@@ -22,7 +22,7 @@ class ResultActivity : AppCompatActivity() {
             bmiValueTV.text=bmi.toString()
                 if (bmi < 18.5) {
                     containerL.setBackgroundColor(R.color.colorYellow)
-                    bmiFlagImgView.setImageResource(R.drawable.exclamationMark)
+                    bmiFlagImgView.setImageResource(R.drawable.exclamationmark)
                     bmiLabelTV.text="You have an UnderWeight!"
                     commentTV.text="Here are some advices To help you increase your weight"
                     advice2IMG.setImageResource(R.drawable.nowater)
@@ -34,7 +34,7 @@ class ResultActivity : AppCompatActivity() {
                 } else {
                     if (bmi > 25) {
                         containerL.setBackgroundColor(R.color.colorRed)
-                        bmiFlagImgView.setImageResource(R.drawable.exclamationMark)
+                        bmiFlagImgView.setImageResource(R.drawable.exclamationmark)
                         bmiLabelTV.text="You have an OverWeight!"
                         commentTV.text="Here are some advices To help you decrease your weight"
                         advice2IMG.setImageResource(R.drawable.water)

@@ -9,6 +9,26 @@
     android:padding="30dp"
     android:id="@+id/container"
     tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+      <ImageView
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:src="@drawable/logo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorGray"
+            />
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
@@ -22,7 +42,7 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="40dp"
         android:gravity="center"
         android:columnCount="2">
@@ -68,9 +88,9 @@
         android:id="@+id/calculateBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/colorRed"
+        android:background="@color/colorYellow"
         android:padding="15dp"
         android:text="CALCULATE BMI"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/colorBlack"
         android:textStyle="bold" />
 </LinearLayout>

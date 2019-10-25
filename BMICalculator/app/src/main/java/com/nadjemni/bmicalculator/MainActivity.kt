@@ -18,8 +18,8 @@ class MainActivity : AppCompatActivity() {
         calculateBtn.setOnClickListener {
             if (heightEDTX.text.isNotEmpty() && weightEDTX.text.isNotEmpty()) {
                 val weight = weightEDTX.text.toString().toDouble()
-                val height = heightEDTX.text.toString().toInt()
-                if (weight > 0 && weight < 600 && height >= 50 && height < 2.5) {
+                val height = heightEDTX.text.toString().toLong()
+                if (weight > 0 && weight < 600 && height >= 50 && height < 250) {
                     val intent = Intent(this@MainActivity, ResultActivity::class.java)
                     intent.putExtra("bmi", calculateBMI(weight, height))
                     startActivity(intent)
@@ -39,7 +39,6 @@ class MainActivity : AppCompatActivity() {
         snackbar.show()
     }
 
-    private fun calculateBMI(weight: Double, height: Int) =
-        (weight / ((height / 100) * (height / 100)))
+    private fun calculateBMI(weight: Double, height: Long) = (weight / ((height /100.0) * (height /100.0)))
 
 }

@@ -18,7 +18,6 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:src="@drawable/icon"
-        android:background=""
         android:id="@+id/skipResultBTN"
         android:layout_gravity="right"
         android:paddingRight="2dp"
