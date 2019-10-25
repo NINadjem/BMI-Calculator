@@ -12,9 +12,9 @@ In this project I tried to simplify all the process using the most simple formul
  
  * BMI Categories:
  
-   1. Low    : bmi  < 18.5 
-   2. Normal : 18.4 < bmi < 25.1
-   2. High   : bmi  > 25 
+   * Low    : bmi  < 18.5 
+   * Normal : 18.4 < bmi < 25.1
+   * High   : bmi  > 25 
    
 
 ## Screenshots 📷
