@@ -5,12 +5,10 @@
 This project consist on creating an Android App that calculates BMI ( Body Mass Index ) & then report its status with some advices to the user ...
 
 ## Screenshots 📷
-| Main UI |
-| ------------- |
-|![alt text](https://github.com/NINadjem/BMI-Calculator/blob/master/Screenshots/mainPage.png "first screen" )|
-| Filling Fields | Reporting BMI State (case Normal) |
+
+| Main UI  | Reporting BMI State (case Normal) |
 | ------------- |:-------------:|
-| ![alt text](https://github.com/NINadjem/BMI-Calculator/blob/master/Screenshots/fill_info.png "when the user fill the fields" ) | ![alt text](https://github.com/NINadjem/BMI-Calculator/blob/master/Screenshots/normalW.png "Normal BMI" ) |
+| ![alt text](https://github.com/NINadjem/BMI-Calculator/blob/master/Screenshots/mainPage.png "first screen" )| ![alt text](https://github.com/NINadjem/BMI-Calculator/blob/master/Screenshots/normalW.png "Normal BMI" ) |
 
 | Reporting BMI State (case OverWeight) | Reporting BMI State (case UnderWeight) |
 | ------------- |:-------------:|
