@@ -36,5 +36,7 @@ here is the project preview:
 This Application was devlopped with 💜 Kotlin 💜 using the one and the only in the world 😍 Android Studio 😍 
 
 ## Running The App 🔌
+ 📱 & click that green button ▶️ then fill your infos & check your body state 😃
 
-No requirements you just have to set your device 📱 & click that green button ▶️ then fill your infos & check your body state 😃
+ - Hello mak9ing changes bcoz i am learning something 
+ - Basically git and github
